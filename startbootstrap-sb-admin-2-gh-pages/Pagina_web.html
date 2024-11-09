@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  
+  <script type="text/javascript">
+    emailjs.init('YKjLUG5rRmeKPspV3')
+  </script>
+    <title>Proyecto</title>
+    <link rel="stylesheet" href="css/sitio web experimental.css">
+</head>
+<div>
+
+<body>
+    
+        
+        <div class="resolucion">
+            <div class="desktop">
+            </div>
+            <div class="tablet">
+            </div>
+            <div class="movil">
+            </div>
+        </div>
+
+          </header>
+          <header class="header">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                  <img src="img/logocs.jpeg.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="login.html">Ingresar</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#lista-1">Ingresar</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#pie">Contactanos </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </header>
+          
+          <div class="card-header py-3">
+            <video muted autoplay loop>
+              <source src="img/video de curso de finazas ‑ Made with FlexClip.mp4" type="video/mp4">
+            </video>
+            <div class="capa"></div>
+          </div>
+          
+          <div class="container-fluid header-contentcontainer">
+            <div class="row align-items-center">
+              <div class="col-lg-6 col-md-12 text-center text-lg-start header-txt">
+                <h1><span>!Bienvenidos¡</span> A nuestra comunidad digital</h1>
+                <p>
+                  Soy Carolina Salas, y es un honor para mí invitarte a este curso en línea sobre finanzas, diseñado para transformar su relación con el dinero y ayudarles a tomar el control de su futuro financiero. ¡Espero verlos pronto en clase!.
+                </p>
+                <a href="#inscribete" class="btn-1">Comienza ahora</a>
+              </div>
+              <div class="col-lg-6 col-md-12 text-center text-lg-start header-txt">
+                <img src="img/woman-5887685_1280.jpg.svg" class="img-thumbnail img-fluid mx-auto d-block">
+              </div>
+            </div>
+          </div>
+
+    
+
+<div class="row justify-content-center">
+    <section class="container-xl">
+        <main class="products">
+            <h2>Optimiza tu negocio con una capatación de última generación:</h2>
+            <div class="box-container" id="lista-1">
+                <div class="ropa">
+                    <img src="img/freepik__candid-image-photography-natural-textures-highly-r__52212.jpeg.svg" class="rounded-circle mx-auto d-block" class="img-fluid" alt="Curso de finanzas">
+                    <div class="product-txt">
+                        <h4 id="inscribete">Finanzas</h4>
+                        <p class="offer">¡Solo por hoy, inscríbete y obtén el curso gratuitamente!</p>
+                        <p class="precio">$300.53</p>
+                        <p class="descripcion">
+                            Aprende los principios y conceptos fundamentales de las finanzas, como el balance general, el estado de pérdidas y ganancias, el flujo de caja, y mucho más.
+                        </p>
+                        <a href="#form-section" class="inscripcion-btn" >Inscribirse Gratis</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+</div>
+            <!-- Contenedor de cuenta regresiva -->
+        <div class="row justify-content-center">
+            <div id="countdown-container">
+                <h5 style="margin-top: 10px;">Tiempo restante para la oferta:</h5>
+                <p id="countdown-timer"></p>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container2">
+        
+        <section id="form-section" class="lead-form" >
+            <form id="form" action="#form-section" method="post" class="was-validated" onsubmit="guardarDatos();">
+                <h2 style="text-align: center;">Para terminar rellena el siguiente formulario de contacto</h2>
+                <div class="mb-3 mt-3">
+                <label >Nombre y apellido:</label>
+                <input type="text" name="name" id="name" placeholder="Nombre y apellido" minlength="3" onBlur="validar();"autofocus required/>
+                <div class="valid-feedback">Valido.</div>
+                <div class="invalid-feedback">Por favor complete este campo.</div>
+              </div>
+              <div class="mb-3 mt-3">
+                <label>URL:</label>
+                <input type="url" name="url" placeholder="URL de tu página web(opcional)">
+                <div class="valid-feedback">Valido.</div>
+                <div class="invalid-feedback">Por favor complete este campo.</div>
+                <div class="mb-3 mt-3">
+                <label>Fecha de Nacimiento:</label>
+                <input type="date" name="fecha_nacimiento" id="fecha" required/>
+                <div class="valid-feedback">Valido.</div>
+                <div class="invalid-feedback">Por favor complete este campo.</div>
+                
+                <label>Edad:</label>
+                <div class="radio-group">
+                    <div class="form-check mb-3">
+                    <input type="radio" name="edad" value="Entre 0-12" required> Entre 0-12 
+                    <input type="radio" name="edad" value="Entre 13-17"> Entre 13-17 
+                    <input type="radio" name="edad" value="Entre 18-30"> Entre 18-30 
+                    <input type="radio" name="edad" value="Entre 31-60"> Entre 31-60 
+                    <input type="radio" name="edad" value="61 o más"> Entre 61 o más 
+                    <div class="valid-feedback">Valido.</div>
+                    <div class="invalid-feedback">Marque esta casilla para continuar.</div>
+                </div>
+                <div class="mb-3 mt-3">
+                <label>Correo Electrónico:</label>
+                <input type="email" name="correoid" id="correoid" placeholder="Correo Electrónico" onBlur="validar();" required/>
+                <div class="invalid-feedback">
+                    Por favor ingresa un correo válido.
+                </div>
+                <button onclick="validateEmail();" type="submit" value="Enviar"class="submit-button">
+                    validar correo
+                </button>
+                <div class="mb-3 mt-3">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" name="telefono" id="telefono" placeholder="Teléfono" maxlength="10" minlength="10" onBlur="validar();" required/>
+                <div class="valid-feedback">Valido.</div>
+                <div class="invalid-feedback">Por favor complete este campo.</div>
+
+                <label>Color Favorito (opcional):</label>
+                <input type="color" name="color" title="Elige tu color favorito">
+
+                <label>Contraseña:</label>
+                <input type="password" name="contra" placeholder="Contraseña (opcional)">
+                
+                <label>Sexo:</label>
+                <div class="radio-group">
+                    <div class="form-check mb-3">
+                    <input type="radio" name="sexo" id="sexo" value="Mujer"  required/> Mujer
+                    <input type="radio" name="sexo" value="Hombre"> Hombre
+                    <div class="valid-feedback">Valido.</div>
+                    <div class="invalid-feedback">Marque esta casilla para continuar.</div>
+                </div>
+
+                <label for="ciudad">Ciudad:</label>
+                <select name="ciudad" id="ciudad">
+                    <option value="Cuenca">Cuenca</option>
+                    <option value="Guayaquil">Guayaquil</option>
+                    <option value="Babahoyo">Babahoyo</option>
+                    <option value="Manta">Manta</option>
+                    <option value="Ambato">Ambato</option>
+                    <option value="Santo domingo">Santo domingo</option>
+                    <option value="Portoviejo">Portoviejo</option>
+                    <option value="Esmeraldas">Esmeraldas</option>
+                    <option value="Ibarra">Ibarra</option>
+                    <option value="Latacunga">Latacunga</option>
+                    <option value="Duran">Duran</option>
+                    <option value="Sangolqui">Sangolqui</option>
+                    <option value="Samborondón">Samborondón</option>
+                    <option value="La libertad">La libertad</option>
+                    <option value="Samborondón">Samborondón</option>
+                    <option value="Machala">Machala</option>
+                    <option value="Quevedo">Quevedo</option>
+                    <option value="Riobamba">Riobamba</option>
+                    <option value="Milagro">Milagro</option>
+                    <option value="Loja">Loja</option>
+                    <option value="Santa Rosa">Santa Rosa</option>
+                    <option value="Santa Elena">Santa Elena</option>
+                    <option value="Chone">Chone</option>
+                    <option value="Montecristi">Montecristi</option>
+                    <option value="Daule">Daule</option>
+                    <option value="El Carmen">El Carmen</option>
+                </select>
+                <label for="comentario" class="form-label">Mensaje</label>
+                <textarea class="form-control form-control-user" name="comentario" id="comentario" placeholder="Escribe tu mensaje aquí..." rows="4"></textarea>
+                <div class="invalid-feedback">
+                    Por favor ingresa tu mensaje.
+                </div>
+                <button id="btn" onclick="validarenvio();guardarDatos();" type="submit" value="Sent Email" class="submit-button">
+                    Enviar
+                </button>
+                        <!-- Botón de consulta -->
+        <button type="button" id="btnConsultar" class="btn btn-primary submit-button" onclick="mostrarInformacion();">
+            
+            Consultar
+        </button>
+        <button type="button" id="btnLimpiar" class="btn btn-secondary submit-button" onclick="limpiarFormulario();">
+            Limpiar consulta
+        </button>
+            </form>
+        </section>
+            <!-- Sección para mostrar la información ingresada -->
+    <div id="resultado" class="info-display" style="display: none;"></div>
+
+    </div>
+    
+
+
+
+
+
+    <!-- JavaScript -->
+
+<!-- Código de tu formulario en Pagina_web.html -->
+
+<script>
+     function guardarDatos() {
+        // Obtener los valores ingresados
+        const nombre = document.getElementById('name').value;
+        const correo = document.getElementById('correoid').value;
+        const telefono = document.getElementById('telefono').value;
+        const fechaNacimiento = document.getElementById('fecha').value;
+        const ciudad = document.getElementById('ciudad').value;
+        const mensaje = document.getElementById('comentario').value;
+
+        // Validación para asegurarse de que todos los campos están completos
+        if (!nombre || !correo || !telefono || !fechaNacimiento || !ciudad || !mensaje) {
+            alert("Por favor complete todos los campos requeridos.");
+            return;
+        }
+
+        // Crear un objeto para almacenar los datos
+        const datos = { nombre, fechaNacimiento, correo, telefono, ciudad, mensaje };
+
+        // Recuperar la lista previa de datos de contactos desde localStorage
+        const datosPrevios = JSON.parse(localStorage.getItem('datosFormulario')) || [];
+        
+        // Agregar el nuevo registro de datos a la lista
+        datosPrevios.push(datos);
+
+        // Guardar la lista actualizada de datos en localStorage
+        localStorage.setItem('datosFormulario', JSON.stringify(datosPrevios));
+
+        alert("Datos guardados correctamente.");
+    }
+</script>
+
+
+    <script>
+    function mostrarInformacion() {
+        // Recuperar la lista de datos de contactos desde localStorage
+        const datosFormulario = JSON.parse(localStorage.getItem('datosFormulario')) || [];
+
+        // Verificar si hay datos guardados
+        if (datosFormulario.length === 0) {
+            alert("No hay información registrada.");
+            return;
+        }
+
+        // Obtener el último registro de la lista
+        const ultimoRegistro = datosFormulario[datosFormulario.length - 1];
+
+        // Mostrar la información del último registro debajo del formulario
+        const resultado = document.getElementById('resultado');
+        resultado.style.display = "block";
+        resultado.innerHTML = `
+            <h4>Información Ingresada:</h4>
+            <p><strong>Nombre y Apellido:</strong> ${ultimoRegistro.nombre}</p>
+            <p><strong>Fecha de Nacimiento:</strong> ${ultimoRegistro.fechaNacimiento}</p>
+            <p><strong>Correo Electrónico:</strong> ${ultimoRegistro.correo}</p>
+            <p><strong>Teléfono:</strong> ${ultimoRegistro.telefono}</p>
+            <p><strong>Ciudad:</strong> ${ultimoRegistro.ciudad}</p>
+            <p><strong>Mensaje:</strong> ${ultimoRegistro.mensaje}</p>
+        `;
+    }
+
+        function limpiarFormulario() {
+            // Limpiar los valores del formulario
+            document.getElementById('form').reset();
+            
+            // Ocultar y limpiar el div de resultado
+            const resultado = document.getElementById('resultado');
+            resultado.style.display = "none";
+            resultado.innerHTML = "";
+        }
+    </script>
+
+
+    <script>
+        function validar(){
+            //Almacenamos los valores
+            nombre=$('#nombre').val();
+            correo=$('#correo').val();
+            tel=$('#telefono').val();
+            //Comprobamos y mostramos diferentes clases
+            if (nombre==''){
+                $('#name').removeClass().addClass('inicio');
+            }
+            else {
+                $('#name').removeClass().addClass('ok');
+            }
+            if (correo==''){
+                $('#correoid').removeClass().addClass('inicio');
+            }
+            else {
+                $('#correoid').removeClass().addClass('ok');
+            } 
+            if (tel==''){
+                $('#telefono').removeClass().addClass('inicio');
+            }
+            else {
+                $('#telefono').removeClass().addClass('ok');
+            }	
+        
+    
+            //Si no hay ningun campo vacio enviamos el formulario
+            if (nombre=='' || correo=='' || tel=='' ||''){
+                return false; 
+                }
+                else{
+                } return true;
+                
+        }
+        </script>
+
+    <script >
+        function validarenvio(){
+
+            const btn = document.getElementById('btn');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Sending...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_4lzrbo7';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+
+      alert('enviado, revise su correo electrónico!');
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});
+        }
+        
+    </script>
+        <script type="text/javascript">
+            function validateEmail(){
+                
+                // Define our regular expression.
+                var validEmail =  /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
+    
+                // Using test we can check if the text match the pattern
+                if( validEmail.test( jQuery('#correoid').val() ) ){
+                    alert("El correo electrónico es válido");
+                    return true;
+                }else{
+                    alert("El correo electrónico no es válido");
+                    return false;
+                }
+            }
+        </script>
+
+
+
+
+    
+
+<footer class="footer" id="pie">
+    <div class="container-xl">
+    <div class="footer-section">
+        <h3>Servicios</h3>
+        <ul>
+            <li><a href="#">Preguntas Frecuentes</a></li>
+            <li><a href="#">Garantía Incondicional</a></li>
+            <li><a href="#">Garantía del Fabricante</a></li>
+            <li><a href="#">Compra Segura</a></li>
+            <li><a href="#">Términos de Uso</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-section">
+        <h3>Acerca de Nosotros</h3>
+        <ul>
+            <li><a href="#nuestra">Nuestra Empresa</a></li>
+            <li><a href="https://maps.app.goo.gl/5NGhGctW8X9nAuWi9" target="_blank">Dirección: Guayaquil, Ecuador</a></li>
+            <li><a href="mailto:catalina.sada.finanzas@gmail.com">Correo: catalina.sada.finanzas@gmail.com</a></li>
+            <li><a href="#">Trabaja con Nosotros</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-section">
+        <h3>Contacto</h3>
+        <ul>
+            <li><a href="https://wa.me/0962102009" target="_blank">WhatsApp: 0962102009</a></li>
+            <li><a href="tel:+042937176">Teléfono: 042937176</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-section">
+        <h3>Síguenos en Redes Sociales</h3>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/" target="_blank"><img src="img/icons8-facebook-nuevo.svg" alt="Facebook"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="img/icons8-instagram.svg" alt="Instagram"></a>
+            <a href="https://telegram.org/" target="_blank"><img src="img/icons8-aplicación-telegrama.svg" alt="Telegram"></a>
+            <a href="https://x.com/?lang=es" target="_blank"><img src="img/twitter3.svg" alt="Twitter"></a>
+        </div>
+    </div>
+
+    <div class="footer-section">
+        <h3>Descarga Nuestra APP</h3>
+        <div class="app-stores">
+            <a href="#"><img src="img/store1.svg" alt="Google Play"></a>
+            <a href="#"><img src="img/store2.svg" alt="App Store"></a>
+        </div>
+    </div>
+   </div>
+</footer>
+
+
+
+    <script src="js/otro.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

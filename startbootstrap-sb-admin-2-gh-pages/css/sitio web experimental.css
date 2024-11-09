@@ -1,0 +1,571 @@
+#hero {
+    min-height: 100vh;
+    position: relative;
+    min-width: 250px;
+}
+
+video {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+
+.download {
+    text-align: left;
+}
+
+.logo {
+    border-bottom-right-radius: 80px;
+}
+/* Contenido */
+
+
+
+body {
+
+    background-color: rgb(223, 250, 250);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.resolucion {
+    width: 99%;
+    text-align: center;
+}
+/**Movil**/
+
+@media (max-width: 767px) {
+    .desktop {
+        display: none;
+    }
+    .tablet {
+        display: none;
+    }
+}
+
+
+/**Tablet**/
+
+@media (min-width: 768px) and (max-width: 990px) {
+    .desktop {
+        display: none;
+    }
+    .movil {
+        display: none;
+    }
+}
+
+
+/**Escritorio**/
+
+@media (min-width: 991px) {
+    .tablet {
+        display: none;
+    }
+    .movil {
+        display: none;
+    }
+}
+
+
+
+
+
+/* Importación de fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+/* Estilos para el menú y el logo */
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #343a40; /* Match Bootstrap's default navbar color */
+  }
+  
+  .navbar {
+    flex-grow: 1; /* Allow the navbar to take up available space */
+  }
+  
+  .navbar-brand {
+    color: #fff; /* Set text color to white */
+  }
+  
+  .navbar-toggler {
+    border-color: #fff; /* Set border color to white */
+  }
+  
+  .navbar-toggler-icon {
+    background-color: #fff; /* Set icon color to white */
+  }
+  
+  .navbar-nav .nav-link {
+    color: #fff; /* Set link color to white */
+  }
+  
+  .navbar-nav .nav-link.active,
+  .navbar-nav .nav-link:hover {
+    color: #007bff; /* Set active/hover link color to Bootstrap's primary color */
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+    }
+    
+    .navbar-collapse {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
+  /* Media Query for larger screens */
+  @media (min-width: 768px) {
+    .navbar {
+      flex-direction: row; /* Display items horizontally */
+    }
+  
+    .navbar ul {
+      flex-direction: row;
+    }
+  
+    .navbar li {
+      margin-right: 20px;
+    }
+  }
+
+
+
+.products h2 {
+
+    color: #0d4497;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: justify;
+    padding: 40px;
+    width: 100%;
+}
+
+
+/* General layout for the section */
+.courses-section {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 1280px;
+    min-width: 250px;
+    margin-bottom: 50px;
+    margin-right: 0px;
+}
+
+.container-xl .products .box-container {
+
+    width:100%;
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 30px;
+    min-width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+}
+
+.container-xl .products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Course item styles */
+.ropa img {
+    border-radius: 10px;
+    height: auto;
+    width: 350px;
+    margin-right: -5px;
+}
+
+
+.product-txt h4 {
+    font-size: 1.8em;
+    color: #0d4497;
+    margin-bottom: 10px;
+}
+
+.offer {
+    color: #e63946;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.precio {
+    font-size: 18px;
+    font-size: 2.2em;
+    color: rgb(45, 66, 187);
+    font-weight: bold;
+    text-decoration: line-through;
+    margin-bottom: 15px;
+}
+
+
+.descripcion {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/* Inscription button styles */
+.inscripcion-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color:rgb(17, 137, 141);
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.inscripcion-btn:hover {
+    background-color: rgb(160, 69, 69);
+}
+
+
+
+/* Redes Sociales */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-icons a img {
+    width: 35px;
+    height: 35px;
+    transition: transform 0.3s;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.1);
+}
+
+/* Tiendas de aplicaciones */
+.app-stores {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.app-stores a img {
+    width: 120px;
+    height: auto;
+}
+
+/* Estilos para la cuenta regresiva */
+#countdown-container   {
+    text-align: center;
+    font-size: 2.3em;
+    padding: 10px;
+    width: 1480px;
+    min-width: 250px;
+    margin-bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #2498ad;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#countdown-timer {
+    text-align: center;
+    font-size: 2.3em;
+    margin-bottom: 0px;
+    color: #ee0606;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+#countdown-container:hover {
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); }
+}
+
+
+
+/* Estilos generales */
+
+.header-txt h1{
+    color: rgb(92, 176, 228);
+    margin-bottom: 35px;
+    font-size: 2em;
+    line-height: 1.2em;
+    margin: 20px 0;
+    align-content: center;
+}
+
+.header-txt p{
+    font-size: 16px;
+    color: #1b1a1b;
+    margin-bottom: 45px;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    max-width: 600px;
+}
+
+.header-txt span{
+    color: rgb(17, 4, 126);
+}
+
+.header-contentcontainer, .contenedor {
+   
+    flex-direction: column;
+    align-items:center;
+    margin-top: 2px;
+    min-width: 250px;
+    width: 100%;
+    background-position: right;
+    padding: 40px;
+    
+}
+
+.header-txt .btn-1 {
+    padding: 10px 20px;
+    font-size: 1em;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color:rgb(17, 137, 141);
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.header-txt .btn-1:hover{
+    background-color: rgb(160, 69, 69);
+}
+
+/* Ajustes de imagen y video */
+
+/* Cursos disponibles */
+
+
+.box-container .ropa {
+    max-width:none;
+    margin: 10px;
+    text-align: center;
+    margin-bottom: 0px;
+    min-width: 250px;
+}
+
+/* Footer */
+
+footer {
+    padding: 40px;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: space-between;
+    color: #333;
+    text-align: center;
+    margin-bottom: 0px;
+    min-width: 250px;
+    width: 100%;
+    
+}
+
+
+.footer-section {
+    margin-bottom: 0px;
+    min-width: 250px;
+    width: 100%;
+    align-content: center;
+
+
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #0c0c0c;
+    align-content: center;
+
+}
+
+.footer-section ul li {
+    margin-bottom: 0px;
+    min-width: 250px;
+}
+
+.footer-section ul li a:hover {
+    color: #007bff;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-icons a img {
+    width: 35px;
+    height: 35px;
+    transition: transform 0.3s;
+}
+
+.app-stores a img {
+    max-width: 100px;
+}
+
+/* Hero Section */
+
+
+
+/* Form Section */
+.lead-form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.lead-form h2 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    color: #333;
+}
+
+.lead-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+.lead-form input[type="text"],
+.lead-form input[type="url"],
+.lead-form input[type="date"],
+.lead-form input[type="email"],
+.lead-form input[type="tel"],
+.lead-form input[type="password"],
+.lead-form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+.lead-form input[type="color"]{
+    width: 100%;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.radio-group {
+    
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 5px;
+    
+}
+
+.lead-form .submit-button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: green;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 2em;
+    }
+    
+    .cta-button {
+        font-size: 1em;
+        padding: 8px 15px;
+    }
+    
+    .lead-form input,
+    .lead-form select,
+    .lead-form .submit-button {
+        font-size: 1em;
+    }
+}
+/* campo mensaje
+/* Estilo para el área de texto */
+#message {
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    resize: vertical; /* Permite cambiar el tamaño verticalmente */
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+/* Estilo para el placeholder */
+#message::placeholder {
+    color: #6c757d;
+    font-style: italic;
+
+
+}
+
+/* Estilo para el mensaje de error */
+.invalid-feedback {
+    color: #dc3545; /* Rojo para el mensaje de error */
+    font-size: 0.875rem;
+    margin-top: 5px;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #495057;
+}
+
+
+.submit-button {
+    margin-top: 10px;
+}
+.info-display {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+
